@@ -1,15 +1,16 @@
 <script setup>
 import {ref} from 'vue'
-const location = ref("Dhaka")
+const location = ref(null)
 
 function changeLocation(newLocation){
   location.value = newLocation
 }
+
 </script>
 
 <template>
 <section class="container mx-auto flex items-center flex-col">
-        <h1 class="text-center text-3xl py-10">Events & Reactivity in Vue.js</h1>
+        <h1 class="text-center text-4xl py-10">Events & Reactivity in Vue.js</h1>
         <div class="container mx-auto flex space-x-5 justify-center m-5">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" @click="changeLocation('Dhaka')">
                 Dhaka
